@@ -590,3 +590,385 @@ i {
 	margin-left: 60px;
 }
 
+
+
+/* =================================
+   ZIRLEX - RESPONSIVE DESIGN
+   ================================= */
+
+@media (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 15px;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+
+    .logo {
+        display: block;
+        width: 130px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .company-name {
+        width: auto;
+        margin: -10px auto 20px;
+        text-align: center;
+        font-size: 19px;
+        letter-spacing: 10px;
+    }
+
+    .options ul {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .get-in-touch {
+        text-align: center;
+    }
+
+    .get-in-touch button {
+        display: inline-block;
+        margin: 10px auto;
+        transform: none;
+    }
+
+    /* HERO SECTION */
+
+    .excellences ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px 0;
+        margin: 30px 0 20px;
+        letter-spacing: 2px;
+        font-size: 9px;
+    }
+
+    .titel-h1 {
+        padding: 10px 0;
+        margin: 0;
+        font-size: clamp(35px, 10vw, 55px);
+        line-height: 1.1;
+        overflow-wrap: break-word;
+    }
+
+    .titel-h2 {
+        margin: 0;
+        padding: 5px 0;
+        font-size: clamp(18px, 5vw, 26px);
+        letter-spacing: clamp(5px, 2vw, 12px);
+    }
+
+    .bio {
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 10px 0;
+        line-height: 1.7;
+    }
+
+    .our-work button {
+        margin: 15px 0;
+    }
+
+    .background {
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    /* FEATURE CARDS */
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .first,
+    .second,
+    .third {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 180px;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .first ul,
+    .second ul,
+    .third ul {
+        padding-left: 25px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .first h5,
+    .second h5,
+    .third h5 {
+        margin: 10px 0;
+    }
+
+    /* FOLLOW US */
+
+    .follow {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .follow i {
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    /* SERVICES */
+
+    .what-we-offer,
+    .get-to-know-us,
+    .get-in-touch-contact {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+    .what-we-offer {
+        margin-top: 50px;
+    }
+
+    .our-services {
+        max-width: 100%;
+        margin: 10px 0;
+        font-size: clamp(35px, 9vw, 55px);
+        overflow-wrap: break-word;
+    }
+
+    .what-we-do {
+        max-width: 100%;
+        margin: 10px 0 20px;
+        line-height: 1.7;
+    }
+
+    .whatsapp {
+        margin: 10px 0;
+    }
+
+    .services-cards {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .first-service-card,
+    .second-service-card,
+    .third-service-card,
+    .fourth-service-card {
+        width: 100%;
+        min-width: 0;
+        padding: 15px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .first-service-card h2,
+    .second-service-card h2,
+    .third-service-card h2,
+    .fourth-service-card h2 {
+        margin: 15px 0;
+        font-size: clamp(25px, 7vw, 35px);
+        overflow-wrap: break-word;
+    }
+
+    .first-service-card p,
+    .second-service-card p,
+    .third-service-card p,
+    .fourth-service-card p {
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    /* ABOUT */
+
+    .who-h1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        font-size: clamp(30px, 8vw, 45px);
+        overflow-wrap: break-word;
+    }
+
+    .who-p,
+    .who-we-are-p {
+        max-width: 100%;
+        margin: 15px 0;
+        line-height: 1.7;
+    }
+
+    .who-we-are-h2 {
+        margin: 30px 0 15px;
+        font-size: 35px;
+    }
+
+    .learn-more-about {
+        margin: 15px 0;
+    }
+
+    .cards-about {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .first-card-about,
+    .second-card-about,
+    .third-card-about {
+        width: 100%;
+        min-width: 0;
+        padding: 15px;
+        background-size: cover;
+    }
+
+    .first-card-about p,
+    .second-card-about p,
+    .third-card-about p {
+        max-width: 100%;
+    }
+
+    /* CONTACT */
+
+    .h1-contact {
+        margin: 10px 0;
+        font-size: clamp(35px, 9vw, 50px);
+    }
+
+    .p-contact {
+        max-width: 100%;
+        margin: 10px 0;
+        line-height: 1.7;
+    }
+
+    .contact-cards {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .first-contact-card,
+    .second-contact-card,
+    .third-contact-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 15px;
+        overflow-wrap: anywhere;
+        background-size: cover;
+    }
+
+    .contact-cards > div > i {
+        display: block;
+        margin: 15px 0;
+        font-size: 22px;
+    }
+
+    .first-contact-card-h2,
+    .second-contact-card-h2,
+    .third-contact-card-h2 {
+        margin: 15px 0 5px;
+        font-size: 23px;
+    }
+
+    .first-contact-card-p,
+    .second-contact-card-p,
+    .third-contact-card-p {
+        margin: 5px 0;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    /* GENERAL */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    p {
+        overflow-wrap: break-word;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .options ul {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .titel-h1 {
+        font-size: 35px;
+    }
+
+    .titel-h2 {
+        letter-spacing: 4px;
+    }
+
+    .excellences ul {
+        letter-spacing: 1px;
+        gap: 10px;
+    }
+
+    .first-service-card h2,
+    .second-service-card h2,
+    .third-service-card h2,
+    .fourth-service-card h2 {
+        font-size: 25px;
+    }
+
+}
+
